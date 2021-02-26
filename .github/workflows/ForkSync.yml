@@ -23,10 +23,10 @@ jobs:
         uses: tgymnich/fork-sync@v1.2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          owner: mcdevhub/bedrock-headers
+          owner: fork-upstream
           head: master
           base: master
           merge_method: rebase
           pr_title: Fork Sync
           pr_message: Syncing Forks
-          ignore_fail: true
+          #ignore_fail: true
