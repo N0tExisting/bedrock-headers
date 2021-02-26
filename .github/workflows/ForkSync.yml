@@ -11,7 +11,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  Sync:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -27,7 +27,7 @@ jobs:
           # Token for the github API
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Branch to track
-          #head: # optional, default is master
+          head: mcdevhub:bedrock-headers:master # optional, default is master
           # Branch to keep updated
           #base: # optional, default is master
           # Merge method to use
