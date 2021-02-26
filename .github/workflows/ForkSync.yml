@@ -22,19 +22,6 @@ jobs:
         # uses: tgymnich/fork-sync@0cc6ac48fd51415e7c34e5b8823021bc952a5f5f
         uses: tgymnich/fork-sync@v1.2.1
         with:
-          # Owner of the forked repository
-          #owner: # optional
-          # Token for the github API
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Branch to track
-          head: mcdevhub:bedrock-headers:master # optional, default is master
-          # Branch to keep updated
-          #base: # optional, default is master
-          # Merge method to use
-          merge_method: rebase # optional, default is merge
-          # The title of the pull request
-          #pr_title: # optional, default is Fork Sync
-          # The message in the pull request
-          pr_message: Syncing Forks # optional
-          # ignore Exceptions
-          #ignore_fail: # optional
+          from-branch: master
+          to-branch: master
+          access-token: ${{ secrets.GITHUB_TOKEN }}
