@@ -31,7 +31,7 @@ jobs:
           # Branch to keep updated
           #base: # optional, default is master
           # Merge method to use
-          #merge_method: # optional, default is merge
+          merge_method: rebase # optional, default is merge
           # The title of the pull request
           #pr_title: # optional, default is Fork Sync
           # The message in the pull request
