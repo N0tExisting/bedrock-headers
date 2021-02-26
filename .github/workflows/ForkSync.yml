@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Fork Sync
 
 # Controls when the action will run. 
@@ -29,4 +27,4 @@ jobs:
           merge_method: rebase
           pr_title: Fork Sync
           pr_message: Syncing Forks
-          #ignore_fail: true
+          ignore_fail: false
